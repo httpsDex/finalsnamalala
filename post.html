@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management</title>
+  
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+  <h1>Student List</h1>
+  <table border="1">
+    <thead>
+     <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Grade</th>
+      <th>Actions</th>
+     </tr>
+    </thead>
+    <tbody id="studentTable">
+
+    </tbody>
+   </table>
+
+
+  <h2>Student Registration</h2>
+ 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="text">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" name="grade"><br>
+    <input type="hidden" id="ID">
+    <button id="submitBtn">Add Student</button>
+    <button id="updateBtn">Update Student</button>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
